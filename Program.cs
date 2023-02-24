@@ -43,3 +43,9 @@ void PrintArray(string[] arr)
     }
     Console.Write("]");
 }
+
+string[] inputString = InputString(n);
+PrintArray(inputString);
+string[] splString = SplString(inputString);
+Console.WriteLine();
+PrintArray(splString);

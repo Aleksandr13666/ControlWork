@@ -17,3 +17,18 @@ for (int i = 0; i < n; i++)
 
 return str;
 }
+
+string[] SplString(string[] str)
+{
+    string[] strs2 = new string[str.Length];
+    int count = 0;
+    for (int i = 0; i < str.Length; i++)
+    {
+        if(str[i].Length <= 3)
+        {
+            strs2[count] = str[i];
+            count++;
+        }
+    }
+    return strs2;
+}
